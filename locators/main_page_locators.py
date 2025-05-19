@@ -9,4 +9,4 @@ class MainPageLocators:
 
     @staticmethod
     def question_number(question):
-        return By.XPATH, f'//*[@id="root"]/div/div/div[5]/div[2]/div/div[{question}]'
+        return By.XPATH, f'//div[contains(@class, "accordion__item") and .//div[contains(text(), "{question}")]'
