@@ -20,5 +20,5 @@ class AboutRentLocators:
     COLOR_BLACK = (By.ID, "black")
     COLOR_GREY = (By.ID, "grey")
     KOMMENT = (By.XPATH, "//input[@placeholder='Комментарий для курьера']")
-    ORDER_BUTTON_IN_ORDER = (By.XPATH, "//div/div[2]/div[3]/button[2]")
+    ORDER_BUTTON_IN_ORDER = (By.XPATH, "//button[contains(@class, 'Order_Buttons') and text()='Заказать']")
     BUTTON_YES = (By.XPATH, "//button[contains(text(),'Да')]")
