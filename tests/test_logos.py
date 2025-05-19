@@ -10,10 +10,10 @@ class TestLogoRedirect:
     def test_logo_redirect_to_dzen_success(self, driver):
         main_page = MainPage(driver)
         main_page.click_on_logo_Yandex()
-        assert driver.current_url == dzen_page
+        assert main_page.get_current_url == dzen_page
 
     @allure.title('Проверка перехода на главную страницу при клике на лого "Самокат"')
     def test_logo_redirect_to_scooter_success(self, driver):
         main_page = MainPage(driver)
         main_page.click_on_logo_Scooter()
-        assert driver.current_url == main_site
+        assert main_page.get_current_url == main_site
